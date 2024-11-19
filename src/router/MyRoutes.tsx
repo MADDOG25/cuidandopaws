@@ -8,7 +8,10 @@ import Blog from "../components/Blog";
 
 export default function MyRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter future={{
+      v7_startTransition: true,
+      v7_relativeSplatPath: true,
+    }}>
       {/* HEADER Y NAVEGACION */}
       <HeaderNav />
 

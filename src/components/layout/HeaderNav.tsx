@@ -4,7 +4,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
   { name: "Inicio", href: "#" },
-  { name: "Reserva", href: "#" },
+  { name: "Reservas", href: "#" },
   { name: "Servicios", href: "#" },
   { name: "Blog", href: "#" },
 ];
@@ -14,7 +14,7 @@ export default function HeaderNav() {
 
   return (
     <div>
-      <header className="absolute inset-x-0 top-0 z-50">
+      <header>
         <nav
           aria-label="Global"
           className="flex items-center justify-between p-6 lg:px-8"
@@ -34,7 +34,7 @@ export default function HeaderNav() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="inline-flex items-center justify-center rounded-md p-2.5 text-[--black]"
+              className="inline-flex items-center justify-center rounded-md p-2.5 text-black cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-8" />
@@ -45,7 +45,7 @@ export default function HeaderNav() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-base font-medium text-[--black] uppercase"
+                className="text-base font-medium text-black uppercase"
               >
                 {item.name}
               </a>
@@ -54,7 +54,7 @@ export default function HeaderNav() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-sm/6 font-medium text-[--white] p-4 uppercase rounded-lg bg-[--accent]"
+              className="text-base font-medium text-white py-4 px-6 mr-2 uppercase rounded-lg bg-accent"
             >
               Registrate
             </a>
@@ -67,7 +67,7 @@ export default function HeaderNav() {
           className="lg:hidden"
         >
           <div className="fixed inset-0 z-50" />
-          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-[--bg] px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+          <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
               <a href="#" className="-m-1.5 p-1.5">
                 <span className="sr-only">CuidandoPaws</span>
@@ -80,20 +80,20 @@ export default function HeaderNav() {
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
-                className="rounded-md p-2.5 text-[--black]"
+                className="rounded-md p-2.5 text-black cursor-pointer"
               >
                 <span className="sr-only">Close menu</span>
                 <XMarkIcon aria-hidden="true" className="size-8" />
               </button>
             </div>
             <div className="mt-6 flow-root">
-              <div className="-my-6 divide-y divide-[--accent]">
+              <div className="-my-6 divide-y divide-accent">
                 <div className="space-y-2 py-6">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
                       href={item.href}
-                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-[--black] hover:bg-[--accent] uppercase"
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium text-black hover:bg-accent uppercase"
                     >
                       {item.name}
                     </a>
@@ -102,7 +102,7 @@ export default function HeaderNav() {
                 <div className="py-6">
                   <a
                     href="#"
-                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium text-[--black] hover:bg-[--accent] uppercase"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium text-black hover:bg-accent uppercase"
                   >
                     Registrate
                   </a>

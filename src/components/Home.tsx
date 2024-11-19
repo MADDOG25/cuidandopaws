@@ -1,6 +1,13 @@
+import Feature from "./Home/Feature";
+import Hero from "./Home/Hero";
 
-export default function Home() {
+function Home() {
   return (
-    <div>Home</div>
-  )
+    <>
+      <Hero />
+      <Feature/>
+    </>
+  );
 }
+
+export default Home;

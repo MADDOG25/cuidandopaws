@@ -36,8 +36,4 @@ html {
 body {
   background-color: var(--bg);
   font-family: "Mochiy Pop One", cursive;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
 }
