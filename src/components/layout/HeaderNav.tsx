@@ -17,7 +17,7 @@ export default function HeaderNav() {
       <header>
         <nav
           aria-label="Global"
-          className="flex items-center justify-between p-6 lg:px-8"
+          className="flex items-center justify-between py-2 lg:px-8"
         >
           <div className="flex lg:flex-1">
             <a href="#">
@@ -34,7 +34,7 @@ export default function HeaderNav() {
             <button
               type="button"
               onClick={() => setMobileMenuOpen(true)}
-              className="inline-flex items-center justify-center rounded-md p-2.5 text-black cursor-pointer"
+              className="inline-flex items-center justify-center rounded-md p-4 text-black cursor-pointer"
             >
               <span className="sr-only">Open main menu</span>
               <Bars3Icon aria-hidden="true" className="size-8" />
