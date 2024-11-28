@@ -37,3 +37,12 @@ body {
   background-color: var(--bg);
   font-family: "Mochiy Pop One", cursive;
 }
+#navlinks{
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.active{
+  color: var(--accent);
+}

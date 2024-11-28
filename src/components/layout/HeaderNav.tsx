@@ -1,12 +1,13 @@
 import { useState } from "react";
 import { Dialog, DialogPanel } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import { NavLink } from "react-router-dom";
 
 const navigation = [
-  { name: "Inicio", href: "#" },
-  { name: "Reservas", href: "#" },
-  { name: "Servicios", href: "#" },
-  { name: "Blog", href: "#" },
+  { name: "Inicio", href: "/inicio" },
+  { name: "Reservas", href: "/reservas" },
+  { name: "Servicios", href: "/servicios" },
+  { name: "Blog", href: "blog" },
 ];
 
 export default function HeaderNav() {
@@ -42,13 +43,14 @@ export default function HeaderNav() {
           </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
-              <a
+              <NavLink
                 key={item.name}
-                href={item.href}
-                className="text-base font-medium text-black uppercase"
+                to={item.href}
+                id="navlinks"
+                className={({ isActive }) => (isActive ? "active" : "")}
               >
                 {item.name}
-              </a>
+              </NavLink>
             ))}
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">

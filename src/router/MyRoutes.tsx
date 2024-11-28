@@ -1,4 +1,4 @@
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route, BrowserRouter, Navigate } from "react-router-dom";
 import HeaderNav from "../components/layout/HeaderNav";
 import Footer from "../components/layout/Footer";
 import Home from "../components/Home";
@@ -8,20 +8,32 @@ import Blog from "../components/Blog";
 
 export default function MyRoutes() {
   return (
-    <BrowserRouter future={{
-      v7_startTransition: true,
-      v7_relativeSplatPath: true,
-    }}>
+    <BrowserRouter
+      future={{
+        v7_startTransition: true,
+        v7_relativeSplatPath: true,
+      }}
+    >
       {/* HEADER Y NAVEGACION */}
       <HeaderNav />
 
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/home" element={<Home />} />
-        <Route path="/reserva" element={<Booking />} />
-        <Route path="/servicio" element={<Service />} />
-        <Route path="/blog" element={<Blog />} />
-      </Routes>
+      <section>
+        <Routes>
+          <Route path="/" element={<Navigate to="/inicio" />} />
+          <Route path="/inicio" element={<Home />} />
+          <Route path="/reservas" element={<Booking />} />
+          <Route path="/servicios" element={<Service />} />
+          <Route path="/blog" element={<Blog />} />
+          <Route
+            path="*"
+            element={
+              <div className="page">
+                <h1 className="heading">Error 404</h1>
+              </div>
+            }
+          />
+        </Routes>
+      </section>
 
       {/* FOOTER */}
       <Footer />

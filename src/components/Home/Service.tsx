@@ -1,27 +1,23 @@
-import {
-  CloudArrowUpIcon,
-  LockClosedIcon,
-  ServerIcon,
-} from "@heroicons/react/20/solid";
+import { HeartIcon, HomeIcon, FaceSmileIcon } from "@heroicons/react/20/solid";
 
 const features = [
   {
-    name: "Push to deploy.",
+    name: "Mejor para los dueños de mascotas.",
     description:
-      "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores impedit perferendis suscipit eaque, iste dolor cupiditate blanditiis ratione.",
-    icon: CloudArrowUpIcon,
+      "Los dueños de mascotas tienen la tranquilidad de saber que sus mascotas (y su casa) están cuidadas mientras ellos están fuera.",
+    icon: HomeIcon,
   },
   {
-    name: "SSL certificates.",
+    name: "Mejor para las mascotas.",
     description:
-      "Anim aute id magna aliqua ad ad non deserunt sunt. Qui irure qui lorem cupidatat commodo.",
-    icon: LockClosedIcon,
+      "Las mascotas permanecen felices en casa con un cuidador que les proporciona cuidados cariñosos y compañía.",
+    icon: HeartIcon,
   },
   {
-    name: "Database backups.",
+    name: "Mejor para los cuidadores.",
     description:
-      "Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.",
-    icon: ServerIcon,
+      "Los cuidadores intercambian su tiempo, cuidados y experiencia por interesantes estancias en casa y experiencias de viaje únicas.",
+    icon: FaceSmileIcon,
   },
 ];
 export default function Service() {
@@ -42,20 +38,28 @@ export default function Service() {
 
       <div className="overflow-hidden bg-bg py-32">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-            <div className="lg:pr-8 lg:pt-4">
-              <div className="lg:max-w-lg grid gap-y-2">
+          <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 sm:gap-y-20">
+            <div className="">
+              <div className="grid gap-y-4">
                 <h2 className="text-base font-semibold text-accent">
-                  Deploy faster
+                  Cuidamos a tu mascota
                 </h2>
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-black sm:text-5xl">
-                  A better workflow
+                  Nuestros servicios
                 </p>
                 <p className="mt-6 text-lg text-black">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Maiores impedit perferendis suscipit eaque, iste dolor
-                  cupiditate blanditiis ratione.
+                  Somos CuidandoPaws, una comunidad global de amantes de las
+                  mascotas con la misión de crear un mundo en el que las
+                  mascotas disfruten de las vacaciones de sus dueños tanto como
+                  ellos.
                 </p>
+                <img
+                  alt="Product screenshot"
+                  src="/primary/pasearperros.jpg"
+                  width={2432}
+                  height={1442}
+                  className="w-[100%] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                />
                 <dl className="mt-10 max-w-xl gap-y-8 grid text-base text-black lg:max-w-none">
                   {features.map((feature) => (
                     <div key={feature.name} className="relative pl-9">
@@ -72,13 +76,6 @@ export default function Service() {
                 </dl>
               </div>
             </div>
-            <img
-              alt="Product screenshot"
-              src="https://tailwindui.com/plus/img/component-images/dark-project-app-screenshot.png"
-              width={2432}
-              height={1442}
-              className="w-[48rem] max-w-none rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
-            />
           </div>
         </div>
       </div>
