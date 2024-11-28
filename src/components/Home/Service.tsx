@@ -55,7 +55,7 @@ export default function Service() {
                 </p>
                 <img
                   alt="Product screenshot"
-                  src="/primary/pasearperros.jpg"
+                  src="/primary/pasearperros.webp"
                   width={2432}
                   height={1442}
                   className="w-[100%] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"

@@ -5,6 +5,7 @@ import Home from "../components/Home";
 import Booking from "../components/Booking";
 import Service from "../components/Service";
 import Blog from "../components/Blog";
+import Error from "../pages/Error";
 
 export default function MyRoutes() {
   return (
@@ -24,14 +25,7 @@ export default function MyRoutes() {
           <Route path="/reservas" element={<Booking />} />
           <Route path="/servicios" element={<Service />} />
           <Route path="/blog" element={<Blog />} />
-          <Route
-            path="*"
-            element={
-              <div className="page">
-                <h1 className="heading">Error 404</h1>
-              </div>
-            }
-          />
+          <Route path="*" element={<Error />} />
         </Routes>
       </section>
 
