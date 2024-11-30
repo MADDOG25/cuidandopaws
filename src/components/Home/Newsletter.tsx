@@ -2,16 +2,17 @@ import { CalendarDaysIcon, HandRaisedIcon } from "@heroicons/react/24/outline";
 
 export default function Newsletter() {
   return (
-    <div className="relative isolate overflow-hidden bg-white py-16 sm:py-32">
+    <div className="relative isolate overflow-hidden bg-white py-32">
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         <div className="mx-auto grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-2">
           <div className="max-w-xl lg:max-w-lg">
             <h2 className="text-4xl font-semibold tracking-tight text-black">
-              Subscribete a nuestra newsletter
+              ¡Subscríbete a nuestra newsletter!
             </h2>
             <p className="mt-4 text-lg text-black">
-              Nostrud amet eu ullamco nisi aute in ad minim nostrud adipisicing
-              velit quis. Duis tempor incididunt dolore.
+              Únete a nuestra comunidad y recibe contenido exclusivo cada
+              semana. Aprende sobre el cuidado de mascotas, historias
+              inspiradoras y tips prácticos directamente en tu correo.
             </p>
             <div className="mt-6 flex max-w-md gap-x-4">
               <label htmlFor="email-address" className="sr-only">
@@ -46,8 +47,8 @@ export default function Newsletter() {
                 Articulos semanales
               </dt>
               <dd className="mt-2 text-base text-black">
-                Non laboris consequat cupidatat laborum magna. Eiusmod non irure
-                cupidatat duis commodo amet.
+                Recibe artículos diseñados para ayudarte a ser el mejor cuidador
+                de tus mascotas. Consejos, tendencias y mucho más.
               </dd>
             </div>
             <div className="flex flex-col items-start">
@@ -61,8 +62,8 @@ export default function Newsletter() {
                 No spam
               </dt>
               <dd className="mt-2 text-base text-black">
-                Officia excepteur ullamco ut sint duis proident non adipisicing.
-                Voluptate incididunt anim.
+                Prometemos enviarte solo contenido valioso. Sin distracciones,
+                solo información útil para ti y tus mascotas.
               </dd>
             </div>
           </dl>
@@ -77,7 +78,7 @@ export default function Newsletter() {
             clipPath:
               "polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
           }}
-          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-accent to-accent opacity-20"
+          className="aspect-[1155/678] w-[72.1875rem] bg-gradient-to-tr from-bg to-bg opacity-20"
         />
       </div>
     </div>

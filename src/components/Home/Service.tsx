@@ -58,7 +58,8 @@ export default function Service() {
                   src="/primary/pasearperros.webp"
                   width={2432}
                   height={1442}
-                  className="w-[100%] rounded-xl shadow-xl ring-1 ring-gray-400/10 sm:w-[57rem] md:-ml-4 lg:-ml-0"
+                  loading="lazy"
+                  className="w-[100%] rounded-xl shadow-xl ring-1 ring-accent sm:w-[57rem] md:-ml-4 lg:-ml-0"
                 />
                 <dl className="mt-10 max-w-xl gap-y-8 grid text-base text-black lg:max-w-none">
                   {features.map((feature) => (

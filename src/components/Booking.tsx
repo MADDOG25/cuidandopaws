@@ -10,10 +10,10 @@ export default function Booking() {
   return (
     <>
       <div className="h-full grid grid-cols-1 lg:grid-cols-2 gap-y-16 gap-x-10 py-32 mx-auto px-6">
-        <div className="flex flex-col gap-y-6 items-center justify-center rounded-xl p-4 shadow-2xl">
+        <div className="flex flex-col gap-y-6 py-10 items-center justify-center rounded-xl p-4 shadow-2xl">
           <h1 className="font-semibold text-4xl">Dueño de mascota</h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut!
+          <p className="text-lg px-4">
+            Para padres de mascotas que buscan cuidados durante su ausencia
           </p>
           <a
             onClick={openModal}
@@ -23,10 +23,10 @@ export default function Booking() {
             Elige este rol
           </a>
         </div>
-        <div className="flex flex-col gap-y-6 items-center justify-center rounded-xl p-4 shadow-2xl">
+        <div className="flex flex-col gap-y-6 py-10 items-center justify-center rounded-xl p-4 shadow-2xl">
           <h1 className="font-semibold text-4xl">Cuidador de mascota</h1>
-          <p className="text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet, aut!
+          <p className="text-lg px-4">
+            Para cuidadores que buscan hogares y mascotas que cuidar
           </p>
           <a
             onClick={openModal}

@@ -15,10 +15,10 @@ export default function HeaderNav() {
 
   return (
     <div>
-      <header>
+      <header className="shadow-xl">
         <nav
           aria-label="Global"
-          className="flex items-center justify-between py-2 lg:px-8"
+          className="flex items-center justify-between lg:px-8"
         >
           <div className="flex lg:flex-1">
             <a href="#">
@@ -56,7 +56,7 @@ export default function HeaderNav() {
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
               href="#"
-              className="text-base font-medium text-white py-4 px-6 mr-2 uppercase rounded-lg bg-accent"
+              className="text-base font-medium text-white py-4 px-6 mr-2 uppercase rounded-lg bg-accent hover:bg-black hover:text-accent"
             >
               Registrate
             </a>
