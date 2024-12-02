@@ -1,6 +1,22 @@
 import { useState } from "react";
+import { SubmitHandler, useForm } from "react-hook-form";
+
+type dataInputs = {
+  email: string;
+  password: string;
+};
 
 export default function Booking() {
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm<dataInputs>();
+
+  const onSubmit: SubmitHandler<dataInputs> = (data) => {
+    console.log(data);
+  };
+
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -51,7 +67,7 @@ export default function Booking() {
               Registraté o Inicia sesión
             </h2>
             <div className="bg-white p-4 sm:mx-auto sm:w-full sm:max-w-sm">
-              <form action="#" method="POST" className="space-y-6">
+              <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
                 <div>
                   <label
                     htmlFor="email"
@@ -62,12 +78,23 @@ export default function Booking() {
                   <div className="mt-2">
                     <input
                       id="email"
-                      name="email"
                       type="email"
                       required
                       autoComplete="email"
                       className="block w-full rounded-md border-0 py-1.5 px-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-accent sm:text-sm"
+                      {...register("email", {
+                        required: "El correo es obligatorio",
+                        pattern: {
+                          value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                          message: "El correo no es válido",
+                        },
+                      })}
                     />
+                    {errors.email && (
+                      <span className="text-sm error">
+                        {errors.email.message}
+                      </span>
+                    )}
                   </div>
                 </div>
 
@@ -91,12 +118,30 @@ export default function Booking() {
                   <div className="mt-2">
                     <input
                       id="password"
-                      name="password"
                       type="password"
                       required
                       autoComplete="current-password"
                       className="block w-full rounded-md border-0 py-1.5 px-2 text-black shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-black focus:ring-2 focus:ring-inset focus:ring-accent sm:text-sm"
+                      {...register("password", {
+                        required: "La contraseña es obligatoria",
+                        minLength: {
+                          value: 8,
+                          message:
+                            "La contraseña debe tener al menos 8 caracteres",
+                        },
+                        pattern: {
+                          value:
+                            /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,}$/,
+                          message:
+                            "La contraseña debe tener al menos una letra mayúscula, una letra minúscula, un número y un carácter especial",
+                        },
+                      })}
                     />
+                    {errors.password && (
+                      <span className="text-sm error">
+                        {errors.password.message}
+                      </span>
+                    )}
                   </div>
                 </div>
 
