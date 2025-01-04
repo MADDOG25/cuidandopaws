@@ -33,7 +33,7 @@ export default function Booking() {
           </p>
           <a
             onClick={openModal}
-            className="text-lg bg-accent cursor-pointer border rounded-2xl p-3 hover:bg-black hover:text-accent"
+            className="text-lg font-semibold bg-accent cursor-pointer border rounded-2xl p-3 hover:bg-black hover:text-accent"
             href="#"
           >
             Elige este rol
@@ -46,7 +46,7 @@ export default function Booking() {
           </p>
           <a
             onClick={openModal}
-            className="text-lg bg-accent cursor-pointer border rounded-2xl p-3 hover:bg-black hover:text-accent"
+            className="text-lg font-semibold bg-accent cursor-pointer border rounded-2xl p-3 hover:bg-black hover:text-accent"
             href="#"
           >
             Elige este rol

@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <footer className="bottom-0 w-full p-4 bg-white border-t border-accent shadow grid md:grid-cols-2 md:gap-x-4 gap-y-4 items-center justify-between md:p-6">
+    <footer className="bottom-0 w-full p-4 bg-bg border-t border-accent shadow grid md:grid-cols-2 md:gap-x-4 gap-y-4 items-center justify-between md:p-6">
       <span className="text-sm text-black font-semibold sm:text-center">
         © 2024{" "}
         <a href="#" className="hover:underline">
@@ -25,7 +25,7 @@ export default function Footer() {
           </a>
         </li>
         <li>
-          <a href="#" className="hover:underline">
+          <a href="/contacto" className="hover:underline">
             Contacto
           </a>
         </li>
