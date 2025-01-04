@@ -7,7 +7,7 @@ const navigation = [
   { name: "Inicio", href: "/inicio" },
   { name: "Reservas", href: "/reservas" },
   { name: "Servicios", href: "/servicios" },
-  { name: "Blog", href: "blog" },
+  { name: "Blog", href: "/blog" },
 ];
 
 export default function HeaderNav() {
@@ -21,7 +21,7 @@ export default function HeaderNav() {
           className="flex items-center justify-between lg:px-8"
         >
           <div className="flex lg:flex-1">
-            <a href="#">
+            <a href="/inicio">
               <span className="sr-only">CuidandoPaws</span>
               <img
                 alt="Logo CuidandoPaws"
@@ -55,10 +55,10 @@ export default function HeaderNav() {
           </div>
           <div className="hidden lg:flex lg:flex-1 lg:justify-end">
             <a
-              href="#"
+              href="/reservas"
               className="text-base font-medium text-white py-4 px-6 mr-2 uppercase rounded-lg bg-accent hover:bg-black hover:text-accent"
             >
-              Registrate
+              Regístrate
             </a>
           </div>
         </nav>
@@ -71,10 +71,10 @@ export default function HeaderNav() {
           <div className="fixed inset-0 z-50" />
           <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-bg px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/inicio" className="-m-1.5 p-1.5">
                 <span className="sr-only">CuidandoPaws</span>
                 <img
-                  alt=""
+                  alt="logo de cuidando paws"
                   src="/primary/logo-header.png"
                   className="h-20 w-auto"
                 />

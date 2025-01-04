@@ -52,7 +52,7 @@ export default function Feature() {
                   <h3 className="text-xl font-semibold text-black">
                     {feature.title}
                   </h3>
-                  <p className="mt-2 text-base text-black">
+                  <p className="mt-2 text-base font-medium text-black">
                     {feature.description}
                   </p>
                 </div>

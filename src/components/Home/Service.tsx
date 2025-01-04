@@ -47,7 +47,7 @@ export default function Service() {
                 <p className="mt-2 text-pretty text-4xl font-semibold tracking-tight text-black sm:text-5xl">
                   Nuestros servicios
                 </p>
-                <p className="mt-6 text-lg text-black">
+                <p className="mt-6 text-lg font-medium text-black">
                   Somos CuidandoPaws, una comunidad global de amantes de las
                   mascotas con la misión de crear un mundo en el que las
                   mascotas disfruten de las vacaciones de sus dueños tanto como
@@ -71,7 +71,7 @@ export default function Service() {
                         />
                         {feature.name}
                       </dt>{" "}
-                      <dd className="inline">{feature.description}</dd>
+                      <dd className="inline font-medium">{feature.description}</dd>
                     </div>
                   ))}
                 </dl>

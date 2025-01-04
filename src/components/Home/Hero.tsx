@@ -11,8 +11,8 @@ export default function Hero() {
   
           {/* Botón */}
           <a
-            href="#"
-            className="uppercase text-sm sm:text-base md:text-lg font-medium text-white py-4 px-6 rounded-lg bg-accent hover:bg-black hover:text-accent"
+            href="/reservas"
+            className="uppercase text-sm sm:text-base md:text-lg font-semibold text-white py-4 px-6 rounded-lg bg-accent hover:bg-black hover:text-accent"
           >
             Comienza Aquí
           </a>
