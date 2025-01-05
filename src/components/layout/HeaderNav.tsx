@@ -15,7 +15,7 @@ export default function HeaderNav() {
 
   return (
     <div>
-      <header className="shadow-xl">
+      <header>
         <nav
           aria-label="Global"
           className="flex items-center justify-between lg:px-8"

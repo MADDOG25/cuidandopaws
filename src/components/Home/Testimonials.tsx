@@ -64,8 +64,8 @@ export default function Testimonials() {
         <figure>
           <blockquote className="text-center text-lg font-medium text-black">
             <p>
-              “Me encanta la plataforma. El proceso funciona muy bien y la experiencia
-              de usuario en CuidandoPaws es muy fácil y buena de
+              “Me encanta la plataforma. El proceso funciona muy bien y la
+              experiencia de usuario en CuidandoPaws es muy fácil y buena de
               entender"
             </p>
           </blockquote>
@@ -76,7 +76,9 @@ export default function Testimonials() {
               className="mx-auto size-16 object-cover rounded-full"
             />
             <div className="mt-4 flex items-center justify-center space-x-3 text-base">
-              <div className="font-medium text-sm text-black">Maria Cáceres</div>
+              <div className="font-medium text-sm text-black">
+                Maria Cáceres
+              </div>
               <svg
                 width={3}
                 height={3}

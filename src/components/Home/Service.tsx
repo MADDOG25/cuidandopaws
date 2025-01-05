@@ -71,7 +71,9 @@ export default function Service() {
                         />
                         {feature.name}
                       </dt>{" "}
-                      <dd className="inline font-medium">{feature.description}</dd>
+                      <dd className="inline font-medium">
+                        {feature.description}
+                      </dd>
                     </div>
                   ))}
                 </dl>
