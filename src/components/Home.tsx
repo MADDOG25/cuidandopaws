@@ -1,9 +1,8 @@
-import Feature from "./Home/Feature";
 import Hero from "./Home/Hero";
-import Newsletter from "./Home/Newsletter";
+import Feature from "./Home/Feature";
 import Service from "./Home/Service";
 import Stats from "./Home/Stats";
-import Testimonials from "./Home/Testimonials";
+import CallToAction from "./CallToAction";
 
 function Home() {
   return (
@@ -12,8 +11,7 @@ function Home() {
       <Feature />
       <Service />
       <Stats />
-      <Testimonials />
-      <Newsletter />
+      <CallToAction />
     </>
   );
 }

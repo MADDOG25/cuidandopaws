@@ -1,7 +1,7 @@
 const stats = [
-  { id: 1, name: "Cuidadores de mascotas", value: "3 mil" },
-  { id: 2, name: "Horas trabajadas", value: "+100 hrs" },
-  { id: 3, name: "Nuevos usuarios mensualmente", value: "+500" },
+  { id: 1, name: "Cuidadores de mascotas", value: "100" },
+  { id: 2, name: "Horas trabajadas", value: "+500 hrs" },
+  { id: 3, name: "Nuevos usuarios mensualmente", value: "+50" },
 ];
 
 export default function Stats() {
