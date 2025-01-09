@@ -1,9 +1,9 @@
+import MyRoutes from "./router/MyRoutes";
+
 function App() {
   return (
     <>
-      <div>
-        <h1>CuidandoPaws</h1>
-      </div>
+      <MyRoutes />
     </>
   );
 }
