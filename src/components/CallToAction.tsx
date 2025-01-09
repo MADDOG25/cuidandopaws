@@ -24,7 +24,7 @@ export default function CallToAction() {
           </svg>
           <div className="mx-auto max-w-4xl text-center lg:mx-0 lg:flex-auto py-10 lg:text-left">
             <h2 className="text-balance text-3xl font-semibold text-black sm:text-4xl">
-              Aprovecha esta oportunidad. Por tiempo limitado.
+              Aprovecha esta oportunidad Por tiempo limitado.
             </h2>
             <p className="mt-6 text-lg text-accent">
               Obtendras un 30% de descuento en tu primer servicio de cuidado de tu mascota.
