@@ -1,3 +1,4 @@
+import BentoGrid from "./BentoGrid";
 import Testimonials from "./Home/Testimonials";
 
 const links = [
@@ -48,6 +49,7 @@ export default function Service() {
         </div>
       </div>
       <Testimonials />
+      <BentoGrid />
     </div>
   );
 }
