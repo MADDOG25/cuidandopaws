@@ -1,4 +1,6 @@
-import Testimonials from "./Home/Testimonials";
+import BentoGrid from "./BentoGrid";
+import CallToActionService from "./CallToActionService";
+import Testimonials from "./Testimonials";
 
 const links = [
   { name: "Programas de voluntariado", href: "#" },
@@ -47,7 +49,9 @@ export default function Service() {
           </div>
         </div>
       </div>
+      <BentoGrid />
       <Testimonials />
+      <CallToActionService />
     </div>
   );
 }

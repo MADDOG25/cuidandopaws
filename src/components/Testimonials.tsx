@@ -2,7 +2,7 @@ export default function Testimonials() {
   return (
     <section className="relative isolate overflow-hidden bg-bg px-6 py-32 mt-20 lg:px-8">
       <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,white)] opacity-20" />
-      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-black ring-1 ring-white sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+      <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl shadow-accent ring-1 ring-white sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
       <div className="grid gap-x-8 gap-y-16 grid-cols-1 lg:grid-cols-3 mx-auto max-w-2xl lg:max-w-6xl">
         <figure>
           <blockquote className="text-center text-lg font-medium text-black">
